@@ -15,7 +15,7 @@ Eğer öğrenci belirli bir ders ismi verirse, o dersin zorluk derecesini, çal�
 
 # API key'i Streamlit Secrets'tan oku
 try:
-    api_key = st.secrets["AQ.Ab8RN6KlXRQy0jQr8YPaAbdR22S2ZfIrCUa3ZLag-gKXjxJKug"]
+    api_key = st.secrets["GEMINI_API_KEY"]
 except Exception:
     st.error("API key bulunamadı. Streamlit Cloud → Settings → Secrets bölümüne GEMINI_API_KEY ekleyin.")
     st.stop()
